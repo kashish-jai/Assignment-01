@@ -1,0 +1,23 @@
+/* CSS comments start with a slash and asterisk like this */
+
+/* Set the cursor to a pointer when hovering over elements */
+cursor: pointer;
+
+/* Border properties */
+border: 50px  black; /* Specifies the border with a solid style and black color */
+
+/* Border radius for rounded corners */
+border-radius: 50px; /* Specifies the radius of the corners, creating rounded corners */
+
+/* Apply border radius to the table itself */
+table {
+    border-radius: 20px;
+}
+
+/* Apply border radius to table header cells */
+th {
+    border-radius: 20px;
+}
+td {
+    border-radius: 20px;
+}

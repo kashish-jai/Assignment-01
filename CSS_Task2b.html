@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style the heading */
+        h1 {
+            text-align: left;
+            padding: 10px;
+        }
+
+        /* Style the navigation bar */
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        /* Style the navigation links */
+        ul.navbar li {
+            float: left;
+            position: relative;
+        }
+
+        ul.navbar li a {
+            display: block;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* Add a blue line to separate the links */
+        ul.navbar li:not(:last-child) a::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            height: 100%;
+            width: 2px;
+            background-color: blue;
+        }
+
+        /* Style the "Home" link */
+        ul.navbar li:first-child a {
+            background-color: grey;
+            color: white;
+        }
+
+        /* Style the rest of the links */
+        ul.navbar li:not(:first-child) a {
+            background-color: #ddd; /* Light grey background */
+            color: #333; /* Dark grey text color */
+        }
+
+        /* Style specific links in blue */
+        ul.navbar li:nth-child(2) a,
+        ul.navbar li:nth-child(3) a,
+        ul.navbar li:nth-child(4) a,
+        ul.navbar li:last-child a {
+            background-color: #ddd;
+            color: blue; /* Blue text color */
+        }
+
+        /* Change link color on hover for all except Bootstrap */
+        ul.navbar li:not(:last-child) a:hover {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Horizontal Navigation Bar</h1>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Bootstrap</a></li>
+    </ul>
+</body>
+</html>
